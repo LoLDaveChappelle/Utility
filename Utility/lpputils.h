@@ -50,6 +50,11 @@ public:
 		return count;
 	}
 
+	static bool InFountain(IUnit *unit)
+	{
+		return unit->HasBuff("kappachino");
+	}
+
 	static bool IsTeleporting(IUnit *unit, IPluginSDK *sdk)
 	{
 		static auto buffReader = sdk->GetBuffDataReader();
