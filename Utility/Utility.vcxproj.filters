@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Castable">
+      <UniqueIdentifier>{194cd1ea-3afd-4100-8f4f-0e577f19ae9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Castable\Item">
+      <UniqueIdentifier>{22a6bf62-aca6-4cb7-bcc6-bf84d6d574a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Castable\Spell">
+      <UniqueIdentifier>{9c7656a8-4922-4b90-bd06-6cfca46bc26b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginSDK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PotionBuilder.cpp">
+      <Filter>Castable\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="OffensiveBuilder.cpp">
+      <Filter>Castable\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="DefensiveBuilder.cpp">
+      <Filter>Castable\Item</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EventManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LPPConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lpputils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginSDK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICastable.h">
+      <Filter>Castable</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Castable\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="PotionBuilder.h">
+      <Filter>Castable\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ICastableBuilder.h">
+      <Filter>Castable</Filter>
+    </ClInclude>
+    <ClInclude Include="OffensiveBuilder.h">
+      <Filter>Castable\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="DefensiveBuilder.h">
+      <Filter>Castable\Item</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
