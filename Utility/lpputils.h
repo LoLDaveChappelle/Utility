@@ -50,6 +50,11 @@ public:
 		return count;
 	}
 
+	static bool InFountain(IUnit *unit)
+	{
+		return unit->HasBuff("kappachino");
+	}
+
 	static bool IsTeleporting(IUnit *unit, IPluginSDK *sdk)
 	{
 		static auto buffReader = sdk->GetBuffDataReader();
@@ -213,4 +218,19 @@ public:
 
 		return menuOption;
 	};
+
+	/// <summary>
+	///     Defines whether a Potion is running.
+	/// </summary>
+	static bool IsPotRunning()
+	{
+		return GEntityList->Player()->HasBuff("ItemCrystalFlask") || GEntityList->Player()->HasBuff("RegenerationPotion")
+			|| GEntityList->Player()->HasBuff("ItemMiniRegenPotion")
+			|| GEntityList->Player()->HasBuff("ItemDarkCrystalFlask")
+			|| GEntityList->Player()->HasBuff("ElixirOfIron")
+			|| GEntityList->Player()->HasBuff("ElixirOfWrath")
+			|| GEntityList->Player()->HasBuff("ElixirOfSorcery")
+			|| GEntityList->Player()->HasBuff("OracleExtractSight")
+			|| GEntityList->Player()->HasBuff("ItemCrystalFlaskJungle");
+	}
 };
