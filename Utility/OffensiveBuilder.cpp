@@ -1,7 +1,7 @@
-#include "PotionBuilder.h"
 #include "Item.h"
+#include "OffensiveBuilder.h"
 
-std::vector<ICastable> const &PotionBuilder::build(IPluginSDK *sdk, IMenu *parentMenu)
+std::vector<ICastable> const &OffensiveBuilder::build(IPluginSDK *sdk, IMenu *parentMenu)
 {
 	auto potionsMenu = parentMenu->AddMenu("Offensive Items");
 
